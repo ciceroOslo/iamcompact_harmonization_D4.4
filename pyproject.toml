@@ -8,6 +8,9 @@ authors = [
 dependencies = [
     "intake>=2.0.6",
     "polars[calamine,openpyxl]>=1.2.1",
+    "fsspec>=2024.6.1",
+    "requests>=2.32.3",
+    "aiohttp>=3.9.5",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"
@@ -20,6 +23,7 @@ build-backend = "hatchling.build"
 managed = true
 dev-dependencies = [
     "ipython>=8.26.0",
+    "ipykernel>=6.29.5",
 ]
 
 [tool.hatch.metadata]
