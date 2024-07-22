@@ -1,11 +1,14 @@
 [project]
-name = "iamcompact-harmonization-d4-4"
+name = "iamcompact-harmonization-d44"
 version = "0.1.0"
 description = "Package for producing harmonized datasets in deliverable D4.4 of the Horizon Europe project IAM COMPACT"
 authors = [
     { name = "Jan Ivar Korsbakken", email = "janko@cicero.oslo.no" }
 ]
-dependencies = []
+dependencies = [
+    "intake>=2.0.6",
+    "polars[calamine,openpyxl]>=1.2.1",
+]
 readme = "README.md"
 requires-python = ">= 3.12"
 
@@ -15,7 +18,9 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "ipython>=8.26.0",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
