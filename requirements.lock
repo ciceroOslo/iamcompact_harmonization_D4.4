@@ -22,7 +22,7 @@ charset-normalizer==3.3.2
 et-xmlfile==1.1.0
     # via openpyxl
 fastexcel==0.11.3
-    # via polars
+    # via iamcompact-harmonization-d44
 frozenlist==1.4.1
     # via aiohttp
     # via aiosignal
@@ -42,13 +42,15 @@ networkx==3.3
 numpy==2.0.1
     # via pyarrow
 openpyxl==3.1.5
-    # via polars
+    # via iamcompact-harmonization-d44
 platformdirs==4.2.2
     # via intake
 polars==1.2.1
     # via iamcompact-harmonization-d44
 pyarrow==17.0.0
     # via fastexcel
+python-calamine==0.2.3
+    # via iamcompact-harmonization-d44
 pyyaml==6.0.1
     # via intake
 requests==2.32.3
